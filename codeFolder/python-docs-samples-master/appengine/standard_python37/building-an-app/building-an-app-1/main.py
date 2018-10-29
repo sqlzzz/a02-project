@@ -16,10 +16,10 @@
 import datetime
 
 from flask import Flask, render_template
+from google.cloud import datastore
 
 app = Flask(__name__)
 
-from google.cloud import datastore
 
 datastore_client = datastore.Client()
 
